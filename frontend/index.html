@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intent Classifier Demo</title>
+  <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">LANGGRAPH LEARNING DEMO</p>
+      <h1>Intent Classifier</h1>
+      <p>Semantic routing → LLM fallback → keyword fallback → clarification</p>
+    </header>
+
+    <section class="panel query-panel">
+      <label for="query">Enter a user query</label>
+      <textarea id="query" rows="4" placeholder="Example: Show employees whose visas expire next month"></textarea>
+      <div class="samples">
+        <button data-query="Count employees by department">SQL example</button>
+        <button data-query="Give me the overall compliance health snapshot">Compliance example</button>
+        <button data-query="What evidence is required for a right to work check?">RAG example</button>
+        <button data-query="Help me with this">Clarify example</button>
+      </div>
+      <button id="classify" class="primary">Classify query</button>
+      <p id="error" class="error" hidden></p>
+    </section>
+
+    <section id="result" class="result-grid" hidden>
+      <article class="panel decision">
+        <p class="label">DECIDED INTENT</p>
+        <h2 id="intent">—</h2>
+        <div class="metrics">
+          <div><span>Confidence</span><strong id="confidence">—</strong></div>
+          <div><span>Source</span><strong id="source">—</strong></div>
+        </div>
+        <p id="reason"></p>
+        <p id="clarification" class="clarification" hidden></p>
+      </article>
+
+      <article class="panel">
+        <p class="label">GRAPH EXECUTION PATH</p>
+        <div id="path" class="path"></div>
+      </article>
+
+      <article class="panel wide">
+        <p class="label">TOP SEMANTIC MATCHES</p>
+        <div id="matches"></div>
+      </article>
+
+      <article class="panel wide terminal">
+        <p class="label">ROUTING LOGS</p>
+        <pre id="logs"></pre>
+      </article>
+    </section>
+  </main>
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
+

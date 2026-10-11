@@ -1,0 +1,57 @@
+[
+  {
+    "intent": "sql_agent",
+    "description": "Questions asking for stored business data, counts, lists, filters, grouping or calculated database results.",
+    "utterances": [
+      "How many employees are in each department?",
+      "Count the employees working under me.",
+      "Show approved leave requests for my team.",
+      "List employees whose visas expire in the next 30 days.",
+      "Show this month's attendance grouped by department.",
+      "What are the total working hours for the HR department?",
+      "Give me the payroll amount paid to each employee this month.",
+      "Which workers have an expired right to work record?",
+      "Show all active sponsored employees.",
+      "Find employees with more than ten absence days.",
+      "How many aproved leaves are there?",
+      "Show employes in the finace departmnt."
+    ]
+  },
+  {
+    "intent": "compliance",
+    "description": "Questions asking for an overall compliance snapshot, risk dashboard, alerts or compliance health summary.",
+    "utterances": [
+      "Give me the current compliance health snapshot.",
+      "Show all urgent compliance alerts.",
+      "What is our overall compliance status?",
+      "How many high risk compliance cases do we have?",
+      "Show the compliance dashboard summary.",
+      "Are there any critical compliance risks today?",
+      "Give me a summary of visa, RTW and document risks.",
+      "Which compliance categories need immediate attention?",
+      "Show our organisation's compliance rating.",
+      "What are this week's compliance alerts?",
+      "Give complience helth summery.",
+      "Any urgent compliace issue today?"
+    ]
+  },
+  {
+    "intent": "rag",
+    "description": "Questions asking to explain policies, guidance, definitions, obligations, procedures or required evidence from documents.",
+    "utterances": [
+      "Explain the right to work checking policy.",
+      "What evidence must a sponsor retain for a right to work check?",
+      "When should a permanent work location change be reported?",
+      "What are the sponsor duties for unauthorised absence?",
+      "Explain the company leave policy.",
+      "What does Appendix D require employers to keep?",
+      "How should an employer conduct a follow-up right to work check?",
+      "What are the rules for reporting a sponsored worker's change?",
+      "Does absence count toward the sponsor reporting threshold?",
+      "Explain what a Certificate of Sponsorship means.",
+      "What evidance is requried for RTW check?",
+      "Explain sponsar reporting requirments."
+    ]
+  }
+]
+

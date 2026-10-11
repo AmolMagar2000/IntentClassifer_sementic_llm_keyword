@@ -1,0 +1,53 @@
+# Python backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testing and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+site/
+
+# Environment files
+.env
+.env.*
+!backend/.env.example
+
+
+# Logs and temporary files
+*.log
+backend/logs/*.txt
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Node / Vite frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
